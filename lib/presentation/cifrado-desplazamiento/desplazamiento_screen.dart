@@ -364,7 +364,9 @@ class _DesplazamientoScreenState extends State<DesplazamientoScreen>
             ElevatedButton.icon(
               onPressed: _procesarTexto,
               icon: Icon(
-                  _tabController.index == 0 ? Icons.lock : Icons.lock_open),
+                _tabController.index == 0 ? Icons.lock : Icons.lock_open,
+                color: Colors.white,
+              ),
               label: Text(
                 _tabController.index == 0 ? 'CIFRAR TEXTO' : 'DESCIFRAR TEXTO',
                 style: const TextStyle(
